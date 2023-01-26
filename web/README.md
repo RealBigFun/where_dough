@@ -1,1 +1,1 @@
-# Do what you want
+# Where Dough front end code lives
