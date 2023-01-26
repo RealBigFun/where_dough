@@ -1,0 +1,39 @@
+{
+  "name": "where-dough-server",
+  "version": "0.0.1",
+  "description": "Server portion of the where-dough personal finance app",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "eslint": "^8.32.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "dev": "nodemon --watch src --exec \"ts-node\" src/index.ts",
+    "test": "npm test",
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solaris765/where_dough.git"
+  },
+  "keywords": [
+    "personal-finance"
+  ],
+  "author": "Mason Rhodes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solaris765/where_dough/issues"
+  },
+  "homepage": "https://github.com/solaris765/where_dough#readme",
+  "dependencies": {
+    "@apollo/client": "^3.7.5",
+    "@apollo/server": "^4.3.2",
+    "@as-integrations/fastify": "^1.3.0",
+    "fastify": "^4.12.0",
+    "graphql": "^16.6.0"
+  }
+}
