@@ -4,6 +4,7 @@
         "target": "ES2022",
         "moduleResolution": "node",
         "module": "commonjs",
+        "esModuleInterop": true
     },
     "include": [
         "./src/**/*"

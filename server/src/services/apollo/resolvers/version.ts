@@ -4,10 +4,10 @@ export const version: Resolvers = {
     Query: {
         version: () => {
             return {
-                version: "0.0.1"
+                version: process.env.npm_package_version ?? 'unknown',
             }
         }
-    },
+    }
 }
 
 export default version
