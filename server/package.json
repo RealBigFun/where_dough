@@ -4,17 +4,23 @@
   "description": "Server portion of the where-dough personal finance app",
   "main": "dist/index.js",
   "devDependencies": {
+    "@graphql-codegen/cli": "2.16.4",
+    "@graphql-codegen/typescript": "2.8.7",
+    "@graphql-codegen/typescript-resolvers": "2.7.12",
+    "@graphql-tools/load-files": "^6.6.1",
     "@types/node": "^18.11.18",
+    "concurrently": "^7.6.0",
     "eslint": "^8.32.0",
     "nodemon": "^2.0.20",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.4"
   },
   "scripts": {
-    "dev": "nodemon --watch src --exec \"ts-node\" src/index.ts",
+    "dev": "concurrently \"nodemon src/index.ts\" \"npm run codegen --watch\"",
     "test": "npm test",
     "compile": "tsc",
-    "start": "npm run compile && node ./dist/index.js"
+    "start": "npm run compile && node ./dist/index.js",
+    "codegen": "graphql-codegen --config codegen.ts"
   },
   "repository": {
     "type": "git",
