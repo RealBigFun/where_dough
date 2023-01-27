@@ -1,9 +1,13 @@
-export const versionResolver = {
+import { Resolvers, VersionResolvers } from "../_generated/graphql"
+
+export const version: Resolvers = {
     Query: {
         version: () => {
             return {
-                version: '1.0.0',
+                version: process.env.npm_package_version ?? 'unknown',
             }
         }
     }
 }
+
+export default version
