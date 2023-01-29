@@ -1,8 +1,6 @@
 // routes/+page.svelte
 <script lang="ts">
    import Counter from './Counter.svelte';
-   import welcome from '$lib/images/svelte-welcome.webp';
-   import welcome_fallback from '$lib/images/svelte-welcome.png';
   import { page } from '$app/stores';
   import { trpc } from '$lib/trpc/client';
 
