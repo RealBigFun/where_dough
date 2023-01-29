@@ -1,7 +1,8 @@
 // lib/trpc/router.ts
-import type { Context } from '$lib/trpc/context';
 import { initTRPC } from '@trpc/server';
 import delay from 'delay';
+
+import type { Context } from '$lib/trpc/context';
 
 export const t = initTRPC.context<Context>().create();
 
