@@ -17,6 +17,7 @@
 		"@sveltejs/kit": "^1.0.0",
 		"@types/cookie": "^0.5.1",
 		"@types/lodash.merge": "^4.6.7",
+		"@types/uuid": "^9.0.0",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
 		"autoprefixer": "^10.4.13",
@@ -39,6 +40,7 @@
 		"delay": "^5.0.0",
 		"neo4j-driver": "^5.5.0",
 		"plaid": "^12.3.0",
-		"trpc-sveltekit": "^3.2.4"
+		"trpc-sveltekit": "^3.2.4",
+		"uuid": "^9.0.0"
 	}
 }

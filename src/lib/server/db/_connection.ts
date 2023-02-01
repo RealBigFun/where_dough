@@ -1,4 +1,5 @@
 import neo4j, {Driver, Session} from 'neo4j-driver'
+
 import { getConfig } from '../config'
 
 let driver: Driver | null = null
