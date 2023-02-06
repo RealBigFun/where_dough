@@ -1,0 +1,11 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "svelte",
+    "json",
+  ],
+  "prettier.enable": false,
+  "editor.formatOnSave": false
+}
