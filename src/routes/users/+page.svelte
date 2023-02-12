@@ -40,16 +40,14 @@ let newUser = {
 
   <div>
     <h2>Users</h2>
-    <a
-      href="#load"
-      role="button"
-      class="secondary"
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex w-max"
       aria-busy={loading}
       on:click|preventDefault={async () => {
         loading = true
         users = await trpc($page).listUsers.query()
         loading = false
-      }}>Load</a
+      }}>Load</button
     >
     <ul>
       {#each users as user}

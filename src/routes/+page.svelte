@@ -29,12 +29,10 @@ const loadData = async () => {
 
 <h6>Loading data in<br /><code>+page.svelte</code></h6>
 
-<a
-  href="#load"
-  role="button"
-  class="secondary"
+<button
+  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex w-max"
   aria-busy={loading}
-  on:click|preventDefault={loadData}>Load</a
+  on:click|preventDefault={loadData}>Load</button
 >
 <p>{greeting}</p>
 
